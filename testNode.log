@@ -1,0 +1,2 @@
+{ "nRemoved" : 10000 }
+SUMMARY#0#200#10000#2014-09-26T07:36:27.052+0000 warning: Failed to connect to 127.0.0.1:27017, reason: errno:99 Cannot assign requested address 2014-09-26T07:36:27.053+0000 Error: couldn't connect to server 127.0.0.1:27017 (127.0.0.1), connection attempt failed at src/mongo/shell/mongo.js:146#10000
