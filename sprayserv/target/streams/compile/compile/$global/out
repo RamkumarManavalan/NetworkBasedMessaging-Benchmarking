@@ -1,40 +1,15 @@
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
-[0m[[0mdebug[0m] [0m	added: Set(/home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/Boot.scala, /home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/MsgService.scala, /home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/model/User.scala)[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
 [0m[[0mdebug[0m] [0m	modified: Set()[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mModified external sources: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/Boot.scala, /home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/MsgService.scala, /home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/model/User.scala)[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/Boot.scala, /home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/MsgService.scala, /home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/model/User.scala)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 3 sources: invalidated sources (3) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 3 Scala sources to /home/rmanavalan/dbless/sprayserv/target/scala-2.10/classes...[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 777ae0cb, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
-[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
-[0m[[0mdebug[0m] [0m	-unchecked[0m
-[0m[[0mdebug[0m] [0m	-deprecation[0m
-[0m[[0mdebug[0m] [0m	-encoding[0m
-[0m[[0mdebug[0m] [0m	utf8[0m
-[0m[[0mdebug[0m] [0m	-bootclasspath[0m
-[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes:/home/rmanavalan/.sbt/boot/scala-2.10.3/lib/scala-library.jar[0m
-[0m[[0mdebug[0m] [0m	-classpath[0m
-[0m[[0mdebug[0m] [0m	/home/rmanavalan/dbless/sprayserv/target/scala-2.10/classes:/home/rmanavalan/.ivy2/cache/com.stackmob/newman_2.10/jars/newman_2.10-1.3.5.jar:/home/rmanavalan/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.2.5.jar:/home/rmanavalan/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.2.5.jar:/home/rmanavalan/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/home/rmanavalan/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.6.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-client/bundles/spray-client-1.2.0.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-can/bundles/spray-can-1.2.0.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-io/bundles/spray-io-1.2.0.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-util/bundles/spray-util-1.2.0.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-http/bundles/spray-http-1.2.0.jar:/home/rmanavalan/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.6.jar:/home/rmanavalan/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.6.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-httpx/bundles/spray-httpx-1.2.0.jar:/home/rmanavalan/.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.3.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-caching/bundles/spray-caching-1.2.0.jar:/home/rmanavalan/.ivy2/cache/com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/jars/concurrentlinkedhashmap-lru-1.4.jar:/home/rmanavalan/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.3.jar:/home/rmanavalan/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/home/rmanavalan/.ivy2/cache/com.twitter/finagle-http_2.10/jars/finagle-http_2.10-6.5.0.jar:/home/rmanavalan/.ivy2/cache/com.twitter/finagle-core_2.10/jars/finagle-core_2.10-6.5.0.jar:/home/rmanavalan/.ivy2/cache/io.netty/netty/bundles/netty-3.5.12.Final.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-app_2.10/jars/util-app_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-core_2.10/jars/util-core_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-collection_2.10/jars/util-collection_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/com.google.guava/guava/jars/guava-11.0.2.jar:/home/rmanavalan/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-1.3.9.jar:/home/rmanavalan/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-hashing_2.10/jars/util-hashing_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-jvm_2.10/jars/util-jvm_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-logging_2.10/jars/util-logging_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/com.twitter/util-codec_2.10/jars/util-codec_2.10-6.3.6.jar:/home/rmanavalan/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar:/home/rmanavalan/.ivy2/cache/net.liftweb/lift-json-scalaz7_2.10/jars/lift-json-scalaz7_2.10-2.5.1.jar:/home/rmanavalan/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar:/home/rmanavalan/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar:/home/rmanavalan/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.0.jar:/home/rmanavalan/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar:/home/rmanavalan/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.0.0.jar:/home/rmanavalan/.ivy2/cache/org.json4s/json4s-native_2.10/jars/json4s-native_2.10-3.2.4.jar:/home/rmanavalan/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.4.jar:/home/rmanavalan/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.4.jar:/home/rmanavalan/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.5.2.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-routing/bundles/spray-routing-1.1.1.jar:/home/rmanavalan/.ivy2/cache/com.chuusai/shapeless_2.10/jars/shapeless_2.10-1.2.4.jar:/home/rmanavalan/.ivy2/cache/io.spray/spray-json_2.10/bundles/spray-json_2.10-1.2.6.jar[0m
-[0m[[33mwarn[0m] [0m/home/rmanavalan/dbless/sprayserv/src/main/scala/com/msg/MsgService.scala:13: imported `User' is permanently hidden by definition of object User in package msg[0m
-[0m[[33mwarn[0m] [0mimport com.msg.model.User[0m
-[0m[[33mwarn[0m] [0m                     ^[0m
-[0m[[31merror[0m] [0mbad symbolic reference. A signature in CacheConditionDirectives.class refers to type EntityTag[0m
-[0m[[31merror[0m] [0min package spray.http which is not available.[0m
-[0m[[31merror[0m] [0mIt may be completely missing from the current classpath, or the version on[0m
-[0m[[31merror[0m] [0mthe classpath might be incompatible with the version used when compiling CacheConditionDirectives.class.[0m
-[0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[31merror[0m] [0mone error found[0m
-[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
-[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m

@@ -13,5 +13,5 @@ object Boot extends App {
   val service = system.actorOf(Props[MsgServiceActor], "msg-service")
 
   // start a new HTTP server on port 8080 with our service actor as the handler
-  IO(Http) ! Http.Bind(service, interface = "10.9.216.220", port = 6001)
+  IO(Http) ! Http.Bind(service, interface = "0.0.0.0", port = 6001)
 }

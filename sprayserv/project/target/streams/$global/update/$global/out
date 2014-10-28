@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/rmanavalan/dbless/sprayserv/project/}sprayserv-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/rmanavalan/Documents/dbless/sprayserv/project/}sprayserv-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#sprayserv-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -8,9 +8,18 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#sprayserv-build;0.1-SNAPSHOT->io.spray#sbt-revolver;0.7.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving io.spray#sbt-revolver;0.7.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.spray#sbt-revolver;0.7.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.spray#sbt-revolver;0.7.1[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: io.spray#sbt-revolver;0.7.1[0m
-[0m[[0mdebug[0m] [0m	found io.spray#sbt-revolver;0.7.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.typesafe.com/typesafe/ivy-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for io.spray#sbt-revolver;0.7.1[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for io.spray#sbt-revolver;0.7.1[0m
+[0m[[0mdebug[0m] [0m		=> http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml (0.7.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] io.spray#sbt-revolver;0.7.1!ivy.xml(ivy.original) (5602ms)[0m
+[0m[[0mdebug[0m] [0m	found io.spray#sbt-revolver;0.7.1 in sbt-plugin-releases[0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#sprayserv-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#sprayserv-build;0.1-SNAPSHOT [compile][0m
@@ -24,7 +33,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#sprayserv-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#sprayserv-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5f4cf43e[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3d74098f[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -1268,9 +1277,14 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#sprayserv-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#sprayserv-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#sprayserv-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.3 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/default/sprayserv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/default/sprayserv-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.spray#sbt-revolver;0.7.1!sbt-revolver.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/jars/sbt-revolver.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/jars/sbt-revolver.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/jars/sbt-revolver.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/jars/sbt-revolver.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/io.spray/sbt-revolver/scala_2.10/sbt_0.13/0.7.1/jars/sbt-revolver.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] io.spray#sbt-revolver;0.7.1!sbt-revolver.jar (8087ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.1!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.1!main.jar[0m
@@ -1318,19 +1332,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.1!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2566ms :: artifacts dl 86ms[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT compile produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT runtime produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT test produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT provided produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT optional produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT compile-internal produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT runtime-internal produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT test-internal produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT plugin produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT sources produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT docs produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT pom produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT scala-tool produced in /home/rmanavalan/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2566ms resolve - 86ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 12233ms :: artifacts dl 8128ms[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT compile produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT runtime produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT test produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT provided produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT optional produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT compile-internal produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT runtime-internal produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT test-internal produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT plugin produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT sources produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT docs produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT pom produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#sprayserv-build;0.1-SNAPSHOT scala-tool produced in /Users/rmanavalan/Documents/dbless/sprayserv/project/target/resolution-cache/reports/default-sprayserv-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (12233ms resolve - 8128ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
