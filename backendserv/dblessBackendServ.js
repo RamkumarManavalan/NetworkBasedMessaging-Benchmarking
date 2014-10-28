@@ -1,5 +1,13 @@
 var restify = require('restify');
 
+function sleep(time, callback) {
+    var stop = new Date().getTime();
+    while(new Date().getTime() < stop + time) {
+        ;
+    }
+    callback();
+}
+
 function postUser(req, res, next) {
   var user = {};
   user.name = req.params.name;//req.body['name'];// req.params.name;
@@ -13,8 +21,13 @@ function postUser(req, res, next) {
       next();
     } else {
       console.log("Persisted: " + user);
+      /*sleep(5000, function() {
+        console.log("Returning response" );
+        res.send(201, user);
+        next()
+      });*/
       res.send(201, user);
-      next()
+      next();
     }
   });
 }
@@ -23,6 +36,9 @@ var server = restify.createServer({name:'userserv'});
 server.use(restify.bodyParser());
 server.post({path : '/users', version: '0.0.1'}, postUser);
 
-server.listen(7080, function() {
+var config = require('config');
+var port = config.get('port');
+
+server.listen(port, function() {
   console.log('%s listening at %s', server.name, server.url);
 });

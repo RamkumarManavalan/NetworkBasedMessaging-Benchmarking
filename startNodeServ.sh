@@ -1,3 +1,5 @@
 #!/bin/bash
-ps -eaf | grep dblessNodeServ | grep node | cut -d' ' -f2 | xargs kill -9
-nohup node nodeserv/dblessNodeServ.js >>nodeserv/dblessNodeServ.log 2>&1 &
+ps -ef | grep dblessNodeServ | grep -v grep | awk '{ print $2 }'| xargs kill -9
+cd nodeserv
+nohup node dblessNodeServ.js >> dblessNodeServ.log 2>&1 &
+cd ..

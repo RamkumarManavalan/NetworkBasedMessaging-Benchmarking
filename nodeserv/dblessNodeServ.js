@@ -22,7 +22,10 @@ function postWaitUntil(req, res, next) {
     data.retrycount = req.params.retrycount;
     //console.log("Playing: "+ endpoint + " " + waituntil + "; Retry Count: "+ req.params.retrycount + " Loop Count: " + req.params.loopcount);
   } else {
-    endpoint = 'http://10.9.216.220:7070/waituntil';
+    var config = require('config');
+    var host = config.get('host');
+    var port = config.get('port');
+    endpoint = 'http://'+host+':'+port+'/waituntil';
     data.endpoint = req.params.endpoint;
     data.data = req.params.data;
     data.waituntil = waituntil;
@@ -40,6 +43,7 @@ function postWaitUntil(req, res, next) {
       {data: data}
     ).on('complete', function(data, response) {
       if (response.statusCode == 201) {
+        console.log("ERR: " + endpoint + " : " + response.statusCode + " : " + data);
       } else {
         console.log("ERR: " + endpoint + " : " + response.statusCode + " : " + data);
         //data.retrycount = parseInt(data.retrycount) + 1;
@@ -51,14 +55,22 @@ function postWaitUntil(req, res, next) {
 }
 
 function callUntilSuccess(rest, endpoint, data, cb) {
-    rest.post(
+    var resp = rest.post(
       endpoint,
       {data: data}
-    ).on('complete', function(responsedata, response) {
+    );
+    resp.on('fail', function(data, response) {
+      console.log("Failed " + response);
+    });
+    resp.on('error', function(err, response) {
+      console.log("Error" + response + " Error: " + err);
+    });
+    resp.on('complete', function(responsedata, response) {
       if (response.statusCode == 201) {
+        console.log("Success: " + endpoint + " : " + response.statusCode + " : " + data);
         cb();
       } else {
-        //console.log("ERR: " + endpoint + " : " + response.statusCode + " : " + data);
+        console.log("ERR: " + endpoint + " : " + response.statusCode + " : " + data);
         data.retrycount = parseInt(data.retrycount) + 1;
         var rest = require('restler');
         callUntilSuccess(rest, endpoint, data);
@@ -78,7 +90,10 @@ function postDelayBy(req, res, next) {
   data.retrycount = 0;
 //console.log("Received request at " + curDate + " to delay by " + req.params.delayby);
 
-  var endpoint = 'http://10.9.216.220:7070/waituntil';
+  var config = require('config');
+  var host = config.get('host');
+  var port = config.get('port');
+  var endpoint = 'http://'+host+':'+port+'/waituntil';
   var rest = require('restler');
   rest.post(
     endpoint,
@@ -94,6 +109,8 @@ server.use(restify.bodyParser());
 server.post({path : '/delayby', version: '0.0.1'}, postDelayBy);
 server.post({path : '/waituntil', version: '0.0.1'}, postWaitUntil);
 
-server.listen(7070, function() {
+var config = require('config');
+var port = config.get('port');
+server.listen(port, function() {
   console.log('%s listening at %s', server.name, server.url);
 });
