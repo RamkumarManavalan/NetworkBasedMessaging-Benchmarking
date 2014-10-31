@@ -1,3 +1,3 @@
 package com.msg.model
 
-case class RequestData(user: User, endpoint: Endpoint, delayby: Int)
+case class RequestData(user: User, endpoint: Endpoint, waituntil: Int)

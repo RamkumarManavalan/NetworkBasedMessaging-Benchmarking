@@ -5,6 +5,8 @@
 max=$1
 sleeptime=$2
 delayby=$3
+ts=`date +"%s"`
+waituntil=`expr $delayby + $ts`
 
 initialdocs=`mongo dblessDB --quiet --eval "printjson(db.user.find().count())"`
 mongo dblessDB --quiet --eval "printjson(db.user.remove({}))" | grep -v undefined 
@@ -14,8 +16,8 @@ START=$(date +%s)
 while [ $a -lt $max ]
 do
   a=`expr $a + 1`
-  data='{"data":{"name":"Ram", "age":10}, "endpoint":"http://0.0.0.0:7080/users", "delayby":'$delayby'}'
-  curl -s -X POST -H "Content-Type: application/json" -d "$data" http://0.0.0.0:7070/delayby | grep -v  endpoint
+  data='{"user":{"name":"Ram Spray", "age":10, "loopcount":0, "retrycount":0}, "endpoint":{"host":"10.9.216.220", "port":7080, "path":"/user"}, "waituntil":'$waituntil'}'
+  curl -s -X POST -H "Content-Type: application/json" -d "$data" http://10.9.216.220:6001/waituntil | grep -v  endpoint
   if [ $sleeptime -gt 0 ]; then
     sleep $sleeptime
   fi

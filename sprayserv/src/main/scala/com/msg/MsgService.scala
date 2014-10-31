@@ -38,27 +38,17 @@ trait MsgService extends HttpService {
   implicit def executionContext = actorRefFactory.dispatcher
   implicit val timeout = Timeout(5)
 
-  val worker = actorRefFactory.actorOf(Props[RequestHandlingActor], "RequestHandler")
-
   val myRoute =
-    path("delayby") {
+    path("waituntil") {
       post {
         entity(as[JObject]) { userObj =>
           process(userObj)
         }
       }
     }
-    /*path("user") {
-      get {
-        respondWithMediaType(`application/json`) { // XML is marshalled to `text/xml` by default, so we simply override here
-              complete("[{'name':'Kumar', 'age':10}]")
-        }
-      }
-    }*/
-  /*def process[T](json: JObject) = {
-    val user = json.extract[User]
-    complete(user)
-  }*/
+
+  val worker = actorRefFactory.actorOf(Props[RequestHandlingActor], "RequestHandler")
+
   def process[T](json: JObject) = {
     val response = (worker ? Create(json))
                 .mapTo[Ok]

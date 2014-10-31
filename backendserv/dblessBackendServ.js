@@ -18,6 +18,7 @@ function postUser(req, res, next) {
   dbutils.insert("mongodb://localhost:27017/dblessDB", "user", user, function(err, msg) {
     if (err) {
       res.send(404, msg);
+      console.log("ERROR: 404 " + msg);
       next();
     } else {
       console.log("Persisted: " + user);

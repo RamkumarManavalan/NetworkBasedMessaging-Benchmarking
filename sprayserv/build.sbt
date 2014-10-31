@@ -1,3 +1,7 @@
+import AssemblyKeys._
+
+//import com.github.retronym.SbtOneJar._
+
 organization  := "com.msg"
 
 version       := "0.1"
@@ -12,7 +16,6 @@ libraryDependencies ++= {
   val akkaV = "2.3.6"
   val sprayV = "1.3.2"
   Seq(
-//    "com.stackmob"        %   "newman"         % "1.3.5",
     "org.json4s"          %%  "json4s-native"  % "3.2.11",
     "io.spray"            %%  "spray-can"      % sprayV,
     "io.spray"            %%  "spray-http"     % sprayV,
@@ -28,4 +31,25 @@ libraryDependencies ++= {
   )
 }
 
+
 Revolver.settings
+
+//oneJarSettings
+
+//libraryDependencies += "commons-lang" % "commons-lang" % "2.6"
+
+
+
+lazy val buildSettings = Seq(
+  version := "0.1-SNAPSHOT",
+  organization := "com.msg",
+  scalaVersion := "2.11.2"
+)
+
+val app = (project in file("app")).
+  settings(buildSettings: _*).
+  settings(assemblySettings: _*).
+  settings(
+    jarName in assembly := "something.jar"
+    //mainClass in assembly := Some("com.msg.Boot")
+  )
